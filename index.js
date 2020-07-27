@@ -1,9 +1,13 @@
 /************************************************************** Task 1: Warm-up! **************************************************************/
 //Task a: declare a variable called votingAge, console log true if age > 18 (no function required)
 
+let votingAge = 19;
 
-
-
+if (votingAge > 18) {
+    console.log("This is the Answer to Task A ----> " + true);
+} else {
+    console.log("This is the Answer to Task A ----> " + false);
+}
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
@@ -104,9 +108,16 @@
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
+// let vowels = [a,e,i,o,u,A,E,I,O,U];
 
+// function countVowels(str) {
+//     let arr = str.split('');
+//     console.log("This is an array of the word turned into a string.-----> " + arr);
 
+//     arr.includes(vowels[i]);
+// }
 
+// countVowels("Hello World");
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
