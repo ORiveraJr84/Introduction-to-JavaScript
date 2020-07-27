@@ -26,15 +26,19 @@ if (myAge>18) {
 
 //Task c: Convert string ("1999") to integer (1999)  (no function required) // hint look up the Number method
 
+let str = "1999";
+let numStr = Number(str);
 
-
-
+console.log("This is the Answer to Task C ----> " + numStr);
 
 //Task d: Write a function to multiply a*b 
 
+function multiplyNums(a,b) {
+    sum = a * b;
+    console.log("This is the Answer to Task D ----> " + sum);
+}
 
-
-
+multiplyNums(5,7);
 
 /************************************************************** Task 2 **************************************************************/
 //Age in Dog years
