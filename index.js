@@ -241,17 +241,29 @@ annoyingSong(3);
 //70s should be Cs 
 //60s should be D 
 //and anything below 60 should be F
-  
 
-  
-  
+function letterGrader(num) {
+    if (num <= 59) {
+        console.log("This is the Answer to Task 7 ----> " + "Your letter grade is an \"F\".");
+    } else if (num >= 60 && num <= 69) {
+        console.log("This is the Answer to Task 7 ----> " + "Your letter grade is a \"D\".");
+    } else if (num >= 70 && num <= 79) {
+        console.log("This is the Answer to Task 7 ----> " + "Your letter grade is a \"C\".");
+    } else if (num >= 80 && num <= 89) {
+        console.log("This is the Answer to Task 7 ----> " + "Your letter grade is a \"B\".");
+    } else if (num >= 90 && num <= 100) {
+        console.log("This is the Answer to Task 7 ----> " + "Your letter grade is an \"A\".");
+    }
+}
 
+letterGrader(90);
+  
 /************************************************************** Stretch **************************************************************/
 //Create a function that counts the number of vowels within a string. It should handle both capitalized and uncapitalized vowels.
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-// let vowels = [a,e,i,o,u,A,E,I,O,U];
+// let vowels = [a,e,i,o,u];
 
 // function countVowels(str) {
 //     let arr = str.split('');
