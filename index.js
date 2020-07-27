@@ -69,7 +69,38 @@ ageToDogYears(2);
 
 // when you are finished invoke your function with the weight of 15 lbs and the age of 1 year - if your calculations are correct your result should be 0.44999999999999996
   
+function feedDog (weight, age) {
+    let amounToFeed;
 
+    if (age >= 1){
+        if(weight <= 5){
+            amountToFeed = weight * .05;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        } else if (weight >= 6 && weight <= 10) {
+            amountToFeed = weight * .04;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        } else if (weight >= 11 && weight <= 15) {
+            amountToFeed = weight * .03;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        } else {
+            amountToFeed = weight * .02;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        }
+    } else {
+        if(age >= 0.166666666666667 && age <= 0.333333333333333){
+            amountToFeed = weight * .1;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        } else if (age >= 0.333333333333333 && age <= 0.583333333333333){
+            amountToFeed = weight * .5;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        } else if (age >= 0.583333333333333 && age < 1){
+            amountToFeed = weight * .4;
+            console.log("This is the Answer to Task 3 ----> " + "You should feed your dog " + amountToFeed + " pounds of food.");
+        } else {}
+    }
+}
+
+feedDog(15,1);
 
 
 
