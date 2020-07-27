@@ -135,7 +135,7 @@ function RPSGame(str) {
         userChoiceVal = rock;
         userChoice = str.toLowerCase();
 
-        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 & Stretch Task 2 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
         console.log("You chose " + userChoice + ". " + "The computer chose " + computerChoice + ".");
 
         if(userChoice == "rock" && computerChoice == "scissors"){
@@ -152,7 +152,7 @@ function RPSGame(str) {
         userChoiceVal = paper;
         userChoice = str.toLowerCase();
 
-        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 & Stretch Task 2 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
         console.log("You chose " + userChoice + ". " + "The computer chose " + computerChoice + ".");
 
         if(userChoice == "paper" && computerChoice == "rock"){
@@ -169,7 +169,7 @@ function RPSGame(str) {
         userChoiceVal = scissors;
         userChoice = str.toLowerCase();
 
-        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 & Stretch Task 2 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
         console.log("You chose " + userChoice + ". " + "The computer chose " + computerChoice + ".");
 
         if(userChoice == "scissors" && computerChoice == "paper"){
@@ -188,13 +188,13 @@ function RPSGame(str) {
 
     if (winner == "user"){
         console.log ("Congratulations! You won!");
-        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 & Stretch Task 2 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
     } else if (winner == "computer") {
         console.log("The computer wins. You lost.");
-        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 & Stretch Task 2 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
     } else if (winner == "tie"){
         console.log("It's a tie. Play again to see who wins.");
-        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 & Stretch Task 2 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
     } else {}
 }
 
@@ -263,22 +263,27 @@ letterGrader(90);
 // Hint - you may need to study tomorrow's traning kit on arrays 
 // try looking up the .includes() method
 
-// let vowels = [a,e,i,o,u];
+let vowels = ["a","e","i","o","u"];
 
-// function countVowels(str) {
-//     let arr = str.split('');
-//     console.log("This is an array of the word turned into a string.-----> " + arr);
+function countVowels(str) {
+    let arr = str.toLowerCase().split("");
+    let count = 0;
 
-//     arr.includes(vowels[i]);
-// }
+    for (let eachLetter of arr) {
+        if (vowels.includes(eachLetter)){
+            count++;
+        }
+    }
+    console.log("This is the Answer to Stretch Task 1 ----> " + "There are " + count + " vowels in " + "\"" + str + "\".");
+}
 
-// countVowels("Hello World");
+countVowels("Count the vowels in this phrase.");
 
 /************************************************************** Stretch **************************************************************/
 //Take Rock, Paper, Sissors further
 //update your rock papers sissors code below to take a prompt from a user using the window object
 
-
+RPSGame(prompt("Choose your weapon wisely....", "Rock, Paper, or Scissors"));
 
 
 
