@@ -111,8 +111,94 @@ feedDog(15,1);
 // use math.random to determine the computers choice 
 // hint while you can complete this with only conditionals based on strings it may help to equate choice to a number 
 
-  
-  
+function RPSGame(str) {
+    
+    let rock = 0;
+    let paper = 1;
+    let scissors = 2;
+    let userChoice;
+    let userChoiceVal;
+    let computerChoice;
+    let winner;
+
+    computerChoice = Math.floor(Math.random() * 3);
+
+    if (computerChoice == 0){
+        computerChoice = "rock";
+    } else if (computerChoice == 1){
+        computerChoice = "paper";
+    } else if (computerChoice == 2) {
+        computerChoice = "scissors";
+    } else {}
+
+    if (str.toLowerCase() == "rock"){
+        userChoiceVal = rock;
+        userChoice = str.toLowerCase();
+
+        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        console.log("You chose " + userChoice + ". " + "The computer chose " + computerChoice + ".");
+
+        if(userChoice == "rock" && computerChoice == "scissors"){
+            winner = "user";
+            console.log (userChoice.charAt(0).toUpperCase() + userChoice.substr(1).toLowerCase() + " beats " + computerChoice + ".");
+        } else if (userChoice == "rock" && computerChoice == "paper") {
+            winner = "computer";
+            console.log (computerChoice.charAt(0).toUpperCase() + computerChoice.substr(1).toLowerCase() + " beats " + userChoice + ".");
+        } else if (userChoice == "rock" && computerChoice == "rock") {
+            winner = "tie";
+        } else {}
+
+    } else if (str.toLowerCase() == "paper"){
+        userChoiceVal = paper;
+        userChoice = str.toLowerCase();
+
+        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        console.log("You chose " + userChoice + ". " + "The computer chose " + computerChoice + ".");
+
+        if(userChoice == "paper" && computerChoice == "rock"){
+            winner = "user";
+            console.log (userChoice.charAt(0).toUpperCase() + userChoice.substr(1).toLowerCase() + " beats " + computerChoice + ".");
+        } else if (userChoice == "paper" && computerChoice == "scissors") {
+            winner = "computer";
+            console.log (computerChoice.charAt(0).toUpperCase() + computerChoice.substr(1).toLowerCase() + " beats " + userChoice + ".");
+        } else if (userChoice == "paper" && computerChoice == "paper") {
+            winner = "tie";
+        } else {}
+        
+    } else if (str.toLowerCase() == "scissors") {
+        userChoiceVal = scissors;
+        userChoice = str.toLowerCase();
+
+        console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 4 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+        console.log("You chose " + userChoice + ". " + "The computer chose " + computerChoice + ".");
+
+        if(userChoice == "scissors" && computerChoice == "paper"){
+            winner = "user";
+            console.log (userChoice.charAt(0).toUpperCase() + userChoice.substr(1).toLowerCase() + " beats " + computerChoice + ".");
+        } else if (userChoice == "scissors" && computerChoice == "rock") {
+            winner = "computer";
+            console.log (computerChoice.charAt(0).toUpperCase() + computerChoice.substr(1).toLowerCase() + " beats " + userChoice + ".");
+        } else if (userChoice == "scissors" && computerChoice == "scissors") {
+            winner = "tie";
+        } else {}
+
+    } else {
+        console.log("Please select either rock, paper, or scissors to play.");
+    }
+
+    if (winner == "user"){
+        console.log ("Congratulations! You won!");
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+    } else if (winner == "computer") {
+        console.log("The computer wins. You lost.");
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+    } else if (winner == "tie"){
+        console.log("It's a tie. Play again to see who wins.");
+        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 4 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+    } else {}
+}
+
+RPSGame("scissors");
 
 /************************************************************** Task 5 **************************************************************/
 //Metric Converter
