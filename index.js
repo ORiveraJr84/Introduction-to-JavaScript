@@ -11,7 +11,16 @@ if (votingAge > 18) {
 
 //Task b: declare a variable and then use a conditional to change the value of that variable based on the value assigned to a second variable (no function required)
 
+let canVote;
+let myAge = 12;
 
+if (myAge>18) {
+    let canVote = "You are allowed to vote."
+    console.log("This is the Answer to Task B ----> " + canVote);
+} else {
+    canVote = "You can NOT vote."
+    console.log("This is the Answer to Task B ----> " + canVote);
+}
 
 
 
