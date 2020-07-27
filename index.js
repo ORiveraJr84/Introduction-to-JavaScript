@@ -223,9 +223,15 @@ convertToCM(11);
 // create a function called annoyingSong
 // the function should take a starting number as an argument and count down - at each iteration it should log (number) bottles of soda on the wall, (number) bottles of soda, take one down pass it around (number left over) bottles of soda on the wall`
   
+function annoyingSong(numStart){
+    console.log("vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv This is the answer to Task 6 vvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvvv");
+    for (numStart; numStart > 0; numStart--) {
+        console.log(numStart + " bottles of soda on the wall! " + numStart + " bottles of soda! Take one down. Pass it around. " + (numStart - 1) + " bottles of soda on the wall!" );
+    }
+    console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ This is the answer to Task 6 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
+}
 
-
-
+annoyingSong(3);
 
 /************************************************************** Task 7 **************************************************************/
 //Grade Calculator
