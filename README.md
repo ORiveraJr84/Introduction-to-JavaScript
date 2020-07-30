@@ -8,12 +8,11 @@ The module challenge is the afternoon project or assignment that students work t
 
 ## Objectives
 
-- use let, const, var and demonstrate their differences.
-- understand and be able to use different operators.
-- write a basic for loop / while loop.
-- write control flow using if/else statements.
-- use function declarations, expressions, and arrow
-functions and describe their differences
+✓ use let, const, var and demonstrate their differences.
+✓ understand and be able to use different operators.
+✓ write a basic for loop / while loop.
+✓ write control flow using if/else statements.
+✓ use function declarations, expressions, and arrow functions and describe their differences
   
 ## Introduction
 
@@ -49,15 +48,15 @@ The completion of these questions is mandatory for MVP. However, passing the qui
 
 After you have completed the requirements, try any of the following challenges. As always, note that these may require additional research beyond what you learned in this module.
 
-- [ ] See tasks labelled stretch. Please ensure you've completed MVP before you attempt the stretch goals. Note that you may need to look forward to tomorrow's training kit in order to complete the task. 
+- [✓] See tasks labeled stretch. Please ensure you've completed MVP before you attempt the stretch goals. Note that you may need to look forward to tomorrow's training kit in order to complete the task. 
 
 ## Submission format
 
 Follow these steps for completing your project.
 
-1. [ ] Submit a pull request to merge `<firstName-lastName>` branch into master. **Please don't merge your own pull request**
-2. [ ] Add your TL as a reviewer on the pull-request
-3. [ ] Your TL will count the project as complete by merging the branch back into master
+1. [✓] Submit a pull request to merge `<firstName-lastName>` branch into master. **Please don't merge your own pull request**
+2. [✓] Add your TL as a reviewer on the pull-request
+3. [✓] Your TL will count the project as complete by merging the branch back into master
 
 ## Resources
 
